@@ -32,7 +32,7 @@ const GetStarted = ({navigation}) => {
         <Button
           type="secondary"
           title="Login"
-          onPress={() => navigation.replace('Splash')}
+          onPress={() => navigation.replace('Login')}
         />
       </View>
     </View>
@@ -74,6 +74,8 @@ const styles = StyleSheet.create({
     marginTop: 25,
     alignSelf: 'center',
     alignItems: 'center',
+    width: 320,
+    height: 240
   },
   textParagraf: {
     fontSize: 20,

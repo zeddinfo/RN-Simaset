@@ -1,5 +1,8 @@
 import Splash from './Splash';
 import GetStarted from './GetStarted';
-import Register from './Register'
+import Register from './Register';
+import Login from './Login';
+import ResetPassword from './ResetPassword';
+import InputPassword from './InputPassword';
 
-export {Splash, GetStarted, Register}
+export {Splash, GetStarted, Register, Login, ResetPassword, InputPassword}

@@ -39,9 +39,11 @@ const styles = StyleSheet.create({
   logo: {
     alignItems: 'center',
     alignSelf: 'center',
-    marginBottom: 50,
+    marginBottom: 30,
     marginTop: 20,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+    width: 250,
+
   },
   login: {
     fontWeight: 'bold',

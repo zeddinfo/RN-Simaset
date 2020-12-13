@@ -14,7 +14,9 @@ const Splash = ({navigation}) => {
         style={styles.logo}
         source={require('../../assets/logo/login1.png')}
       />
-      <Text style={styles.title}>Simaset Mobile</Text>
+      <Text style={styles.titlePrimary}>
+        SIMASET <Text style={styles.title}>Mobile</Text>
+      </Text>
     </View>
   );
 };
@@ -34,6 +36,13 @@ const styles = StyleSheet.create({
     color: 'black',
     fontFamily: 'Nunito-SemiBold',
     alignSelf: 'center',
+  },
+  titlePrimary: {
+    fontSize: 28,
+    fontWeight: '800',
+    fontFamily: 'Nunito-SemiBold',
+    alignSelf: 'center',
+    color: '#1D2A64',
   },
   logo: {
     width: 200,

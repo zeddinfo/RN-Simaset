@@ -1,7 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Splash, GetStarted, Register} from '../pages';
+import {Splash, GetStarted, Register, Login, ResetPassword, InputPassword} from '../pages';
+
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 const Router = () => {
@@ -20,6 +21,21 @@ const Router = () => {
       <Stack.Screen
         name="Register"
         component={Register}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ResetPassword"
+        component={ResetPassword}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="InputPassword"
+        component={InputPassword}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
