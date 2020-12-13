@@ -14,11 +14,15 @@ const Register = ({navigation}) => {
             style={styles.logo}
             source={require('../../assets/logo/logo-primadana.png')}
           />
-          <Input label="Nama Lengkap" placeholder="Isikan Nama Lengkap..."/>
+          <Input label="Nama Lengkap" placeholder="Isikan Nama Lengkap..." />
           <Gap height={20} />
-          <Input label="Username" placeholder="Isikan Username..."/>
+          <Input label="Username" placeholder="Isikan Username..." />
           <Gap height={20} />
-          <Input label="Password" secureTextEntry placeholder="Isikan Password..." />
+          <Input
+            label="Password"
+            secureTextEntry
+            placeholder="Isikan Password..."
+          />
           <Gap height={25} />
           <Button title="Registrasi" />
         </ScrollView>
