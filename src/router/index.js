@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Splash, GetStarted} from '../pages';
+import {Splash, GetStarted, Register} from '../pages';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 const Router = () => {
@@ -15,6 +15,11 @@ const Router = () => {
       <Stack.Screen
         name="GetStarted"
         component={GetStarted}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

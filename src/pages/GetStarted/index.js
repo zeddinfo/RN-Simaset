@@ -27,7 +27,7 @@ const GetStarted = ({navigation}) => {
       <View>
         <Button
           title="Registrasi Akun"
-          onPress={() => navigation.navigate('Splash')}
+          onPress={() => navigation.navigate('Register')}
         />
         <Button
           type="secondary"

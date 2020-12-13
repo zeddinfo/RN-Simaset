@@ -1,13 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import BtnIconSend from './BtnIconSend';
+import IconOnly from './IconOnly';
 
 const Button = ({type, title, onPress, icon, disable}) => {
-  //   if (type === 'btn-icon-send') {
-  //     return <BtnIconSend disable={disable} />;
-  //   }
-  //   if (type === 'icon-only') {
-  //     return <IconOnly icon={icon} onPress={onPress} />;
-  //   }
+  if (type === 'btn-icon-send') {
+    return <BtnIconSend disable={disable} />;
+  }
+  if (type === 'icon-only') {
+    return <IconOnly icon={icon} onPress={onPress} />;
+  }
   if (disable) {
     return (
       <View style={styles.disableBg}>
